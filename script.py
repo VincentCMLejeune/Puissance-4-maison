@@ -39,7 +39,11 @@ def add_piece(board, pawn):
           board[i][row] = pawn
           break
 
-def board_full(board)
+def board_full(board):
+    for i in range(7):
+        if board[0][i] == ".":
+            return False
+    return True
 
 for i in range(7):
   board[i][3] = "O"
